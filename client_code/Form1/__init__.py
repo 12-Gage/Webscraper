@@ -9,11 +9,15 @@ class Form1(Form1Template):
 
     # Any code you write here will run before the form opens.
 
-  def word_box_pressed_enter(self, **event_args):
+  def topic_box_pressed_enter(self, **event_args):
     """This method is called when the user presses Enter in this text box"""
     pass
 
   def url_box_pressed_enter(self, **event_args):
     """This method is called when the user presses Enter in this text box"""
+    pass
+
+  def run_button_click(self, **event_args):
+    """This method is called when the button is clicked"""
     pass
     

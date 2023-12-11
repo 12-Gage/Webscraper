@@ -10,8 +10,7 @@ components:
   components:
   - name: headline_1
     properties: {role: headline, text: 'In the first box, input a topic or a comma
-        separated list of topics below. In the second box, input the url or comma
-        separated list of url''s below.'}
+        separated list of topics below. In the second box, input the url.'}
     type: Label
     layout_properties: {grid_position: 'XXQIQL,UYJQAZ'}
   - name: card_1
@@ -19,17 +18,26 @@ components:
     type: ColumnPanel
     layout_properties: {grid_position: 'BKOFTX,BVDDIS'}
     components:
-    - name: word_box
+    - name: topic_box
       properties: {}
       type: TextBox
       layout_properties: {grid_position: 'PUUYWJ,YQUWBG'}
-      event_bindings: {pressed_enter: word_box_pressed_enter}
+      event_bindings: {pressed_enter: topic_box_pressed_enter}
     - name: url_box
       properties: {}
       type: TextBox
       layout_properties: {grid_position: 'RFHBWA,RKEQMK'}
       event_bindings: {pressed_enter: url_box_pressed_enter}
+    - name: run_button
+      properties: {text: run}
+      type: Button
+      layout_properties: {grid_position: 'ZDRRBA,XSXXIY'}
+      event_bindings: {click: run_button_click}
 - type: FlowPanel
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
+- name: title_label
+  properties: {text: Web Scraper Playground}
+  type: Label
+  layout_properties: {slot: title}
