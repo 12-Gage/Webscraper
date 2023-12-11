@@ -1,7 +1,11 @@
 allow_embedding: false
-package_name: Material_Design_1
-name: Material Design 1
+package_name: Web_Scraper_Playground
+name: Web Scraper Playground
 startup_form: Form1
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
-services: []
+metadata: {title: Web Scraper 1.0, description: Input a word or list of words in a comma separated list and let our web scraper do the work.}
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {}
