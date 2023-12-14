@@ -20,7 +20,7 @@ class Form1(Form1Template):
   def run_button_click(self, **event_args):
     """This method is called when the button is clicked"""
     topic = self.topic_box.text
-    url = self.url_box.text
+    url = str(self.url_box.text)
     
     anvil.server.call('raw_data', url)
     Notification("Feedback Submitted").show()
