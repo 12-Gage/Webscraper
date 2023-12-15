@@ -1,19 +1,16 @@
-from bs4 import BeautifulSoup
 import requests
 import time
 import datetime
 import smtplib
+import anvil.server
 
 #anvil stuff
-import anvil.server
 pip install anvil-uplink
 anvil.server.connect("server_OMUQTSB4R6YWHHN2AQBBW22P-AA7NC2TON2CLKDAF")
 
 class ScrapedData:
-    url = anvil.server.call()
-    
     @anvil.server.callable
-    def raw_data(url):
+    def raw_data(url, topic):
         headers = {
             "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7", 
             "Accept-Encoding": "gzip, deflate, br", 
@@ -31,9 +28,9 @@ class ScrapedData:
             "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36", 
             "X-Amzn-Trace-Id": "Root=1-6568f7cc-1700f23442d59a687e8e741e"
         }
-        page = requests.get(url,headers)
+        page = requests.get(url, headers)
 
-        word = "Ravel"
+        word = topic 
         list_header = []
         soup1 = BeautifulSoup(page.content, "html.parser")
         soup2 = BeautifulSoup(soup1.prettify(), "html.parser")
