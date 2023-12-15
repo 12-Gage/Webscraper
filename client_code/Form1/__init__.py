@@ -22,9 +22,4 @@ class Form1(Form1Template):
     topic = self.topic_box.text
     url = str(self.url_box.text)
     
-    anvil.server.call('raw_data', url)
-    Notification("Feedback Submitted").show()
-
-    self.url_box.text = ""
-    self.topic_box.text = ""
-    
+    anvil.server.call('raw_data', url)    
