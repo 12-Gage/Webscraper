@@ -26,6 +26,6 @@ We are still working on connecting our Anvil app so our webscraper is user-frien
 ## How to run our Anvil App:
 
 1. Download this repo.
-2. Download `pip install anvil-uplink` which is our Anvil dependency.
+2. Run `pip install anvil-uplink` from your terminal, this is an Anvil dependency.
 3. Run `anvil-app-server` in your command line.
 4. Open your web browser and go to the address provided in the terminal
