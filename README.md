@@ -19,3 +19,6 @@ You might ask, "why can't I just ask ChatGPT itself, and cut out the middle-man?
 1. Takes in the URL given by the user
 2. Works with the html from the URL, parses through and finds the topic that the user gives
 3. Outputs the paragraph under said topic
+
+## Disclaimer
+We are still working on connecting our Anvil app so our code is user-friendly and dynamic. 
