@@ -28,4 +28,4 @@ We are still working on connecting our Anvil app so our webscraper is user-frien
 1. Download this repo.
 2. Download `pip install anvil-uplink` which is our Anvil dependency.
 3. Run `anvil-app-server` in your command line.
-4. Open your web browser and go to the address provided in the terminal, typically http://localhost:3030
+4. Open your web browser and go to the address provided in the terminal
