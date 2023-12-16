@@ -20,5 +20,12 @@ You might ask, "why can't I just ask ChatGPT itself, and cut out the middle-man?
 2. Works with the html from the URL, parses through and finds the topic that the user gives
 3. Outputs the paragraph under said topic
 
-## Disclaimer
-We are still working on connecting our Anvil app so our code is user-friendly and dynamic. 
+### Disclaimer
+We are still working on connecting our Anvil app so our code is user-friendly and dynamic.
+
+## How to run our Anvil App:
+
+1. Download this repo.
+2. Download `pip install anvil-uplink` which is our Anvil dependency.
+3. Run `anvil-app-server` in your command line.
+4. Open your web browser and go to the address provided in the terminal, typically http://localhost:3030
