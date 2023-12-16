@@ -21,7 +21,7 @@ You might ask, "why can't I just ask ChatGPT itself, and cut out the middle-man?
 3. Outputs the paragraph under said topic
 
 ### Disclaimer
-We are still working on connecting our Anvil app so our code is user-friendly and dynamic.
+We are still working on connecting our Anvil app so our webscraper is user-friendly and dynamic.
 
 ## How to run our Anvil App:
 
